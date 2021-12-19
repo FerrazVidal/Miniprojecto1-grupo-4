@@ -3081,15 +3081,7 @@ class Style
     /**
      * @param $val
      */
-    function set_z_index($val)
-    {
-        if (round($val) != $val && $val !== "auto") {
-            return;
-        }
-
-        $this->_prop_cache["z_index"] = null;
-        $this->_props["z_index"] = $val;
-    }
+  
 
     /**
      * @param FontMetrics $fontMetrics

@@ -1,11 +1,9 @@
 <?php
 
-//include_once('config.php');
-
 	use Dompdf\Dompdf;
 	use Sabberworm\CSS\Value\Size;
 
-	require __DIR__ . "/autoload.inc.php";
+	//require __DIR__ . "/autoload.inc.php";
 
 	$dompdf = new Dompdf();
 	$dompdf->loadHtml($str, "<h1>Ola, Mundo!</h1>");
@@ -15,4 +13,3 @@
 	$dompdf->render();
 
 	var_dump($dompdf->output());
-	?>
